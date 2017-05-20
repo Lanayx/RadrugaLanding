@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="description" content="Radruga is a free real life game. Here you'll know loads of interesting facts, stretch your legs and find new friends!">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Vladimir Shchur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.01, maximum-scale=1.01'" />
+    <title>Radruga offline RPG</title>
+    <link rel="shortcut icon" href="/favicon.ico?v=1" />
+    <meta property="og:title" content="Radruga - free offline RPG" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://radruga.com/" />
+    <meta property="og:description" content="Searching for good friends? Find them while playing Radruga. But be prepared for real missions!" />
+    <meta property="og:image" content="http://radruga.com/Content/images/radruga_logo.png" />
+    <script>
+        if (!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Mask", "1.1") ||
+            (navigator.userAgent.indexOf("Android 4.") > -1 && navigator.userAgent[navigator.userAgent.indexOf("Android 4.") + 10] < 4))//because android lies
+        {
+            document.documentElement.className = "noSvgMask";
+        }
+    </script>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <main id="fullpage" data-names='["Offline RPG", "Enter the game", "Open up horizons", "Unravel mysteries", "Become a superhero", "Start playing"]'>
+        <section class="section" id="startSection">
+            <header>
+                <div class="content topContent">
+                    <h1 class="logo">
+                        <img src="~/Content/images/logo.svg" alt="Radruga">
+                    </h1>
+                    <div class="description">First real offline RPG is waiting for you!</div>
+                    <div>
+                        <div><i>Game is only available in russian for now. We need 100 likes to make the international version</i></div>
+                        <div class="fb-like" data-href="http://radruga.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false" data-colorscheme="dark"></div>
+                    </div>
+                    <div class="smartphone en"></div>
+                </div>
+                <div class="leftBlackTriangle"></div>
+                <div class="rightBlackTriangle"></div>
+            </header>
+            <div class="langSwitch">
+                <a href=".">RU</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="active">EN</span>
+            </div>
+        </section>
+        <section id="enterSection" class="section">
+            <div class="content">
+                <h2>Enter the game</h2>
+                <div class="description">You need a smartphone with one of three supported OS to start playing. Download the app and dive into the game.</div>
+                <div class="devices imageStep"></div>
+            </div>
+        </section>
+        <section id="horizonSection" class="section">
+            <div class="content">
+                <h2>Open up horizons</h2>
+                <div class="description">Travelings and journeys are wating for you to see what you haven't seen yet and arrive at the most unexpected places.</div>
+                <div class="horizon imageStep"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="content">
+                <h2>Unravel mysteries</h2>
+                <div class="description">You are surrounded by billions of wonderful things and events you aren't aware of, but you will know them and receive tons of pleasure.</div>
+                <div class="secrecy imageStep"></div>
+            </div>
+
+        </section>
+        <section class="section">
+            <div class="content">
+                <h2>Become a superhero</h2>
+                <div class="description">You'll become stronger and wiser while passing the game, your level and experience will grow until you feel the powers to achieve great aims.</div>
+                <div class="superman imageStep"></div>
+            </div>
+        </section>
+        <section id="actionSection" class="section">
+            <div class="content bottomContent">
+                <h2 class="bottomContentHeader">Start playing</h2>
+                <div>                   
+                    <a href="https://www.facebook.com/groups/radruga/" target="_blank" class="button blueButton fb">
+                        <span class="btnText">Join the  group<br /><strong>Facebook</strong></span>
+                    </a>
+                </div>
+            </div>
+            <footer>
+                <div class="footerContent">                    
+                    <div>
+                        <span class="greenButton buttonFeedback">Leave a message right now</span>
+                    </div>
+                  
+                    <div class="footerBottom transparent">
+                        <div class="footerLogo">
+                            <span class="firstLetter">R</span>adruga
+                        </div>
+                        <address>support@radruga.com</address>
+                        <div>&copy; @DateTime.Now.Year – radruga.com&nbsp;&nbsp;&nbsp;12+</div>
+                    </div>
+
+                </div>
+
+            </footer>
+        </section>
+    </main>
+    <aside>
+        <div id="sendMessagePopup" class="popup">
+            <h4>Write to us</h4>
+            <div>
+                Send your message from here and we'll definetely read it and respond if you leave the contacts as well!
+            </div>
+            <textarea id="txtMessage" rows="5" placeholder="Your message" data-url="@Url.Action("SendMessage")"></textarea>
+            <span class="error">Please, not more than 1000 characters!</span>
+            <span id="sendMessage" class="button greenButton">Send</span>
+        </div>
+    </aside>
+    @Scripts.Render("~/Content/js")
+
+
+    @if (!HttpContext.Current.IsDebuggingEnabled)
+    {
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-51699' + '285-1', 'radruga.com');
+            ga('send', 'pageview');
+        </script>
+        <script type="text/javascript">
+            var appInsights = window.appInsights || function(config) {
+                function r(config) {
+                    t[config] = function() {
+                        var i = arguments;
+                        t.queue.push(function() { t[config].apply(t, i) })
+                    }
+                }
+
+                var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f;
+                for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop());
+                return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function(config, r, u, e, o) {
+                    var s = f && f(config, r, u, e, o);
+                    return s !== !0 && t["_" + i](config, r, u, e, o), s
+                }), t
+            }({
+                instrumentationKey: "ac35f22c-28f7-4a98-8721-d67b3748b459"
+            });
+            window.appInsights = appInsights;
+            appInsights.trackPageView(null, null, { urlReferrer: document.referrer });
+        </script>
+    }
+
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=1776836815879882";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

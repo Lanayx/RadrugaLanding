@@ -1,0 +1,501 @@
+﻿html {
+    font-size: 1em;
+}
+
+body {
+    font-family: open_sans;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 3.9rem;
+    margin: 0;
+}
+
+header {
+    background-color: #30323a;
+    height: 100%;
+    position: relative;
+}
+
+footer {
+    background-color: #30323a;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.appIcon {
+    text-align: center;
+}
+
+.content {
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.topContent {
+    background-color: #30323a;
+    position: absolute;
+    z-index: 1;
+    padding: 8% 7.5% 0;
+    left: 0;
+    right: 0;
+}
+
+.bottomContent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.bottomContentHeader {
+    margin-top: 5%;
+    margin-bottom: 1rem;
+}
+
+.footerContent {
+    width: 18rem;
+    margin: auto;
+    padding-top: .8rem;
+    font-size: 1rem;
+}
+
+    .footerContent > div {
+        margin-top: 1rem;
+    }
+
+.footerBottom {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.4rem;
+    margin: .5rem 0 2rem;
+}
+
+.leftBlackTriangle, .rightBlackTriangle {
+    height: 120%;
+    background-color: #8e90d6;
+    width: 200%;
+    position: absolute;
+    z-index: 2;
+    top: 83%;
+}
+
+.leftBlackTriangle {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+    left: 0;
+    margin-left: -100%;
+    -webkit-box-shadow: inset 0 10px 2px #8284c5;
+    -ms-box-shadow: inset 0 10px 2px #8284c5;
+    box-shadow: inset 0 10px 2px #8284c5;
+}
+
+.rightBlackTriangle {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    right: 0;
+    margin-right: -100%;
+}
+
+.langSwitch {
+    position:absolute;
+    top:3%;
+    right:10%; 
+    z-index:1;
+}
+
+    .langSwitch > .active {
+        color:#50ca95;
+    }  
+
+.logo {
+    width: 80%;
+    margin: auto;
+    height: 10%;
+}
+
+.footerLogo {
+    font-size: 3rem;
+}
+
+    .footerLogo > .firstLetter {
+        font-size: 4rem;
+    }
+
+.smartphone {
+    margin: 15% auto 0;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(images/phone.png);
+    padding-top: 180%;
+}
+
+    .smartphone.en {        
+       background-image: url(images/phone-en.png);
+    }
+
+.imageStep {
+    width: 65%;
+    padding-top: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 7% auto 0;
+}
+
+.noSvgMask .imageStep {
+    padding-top: 0;
+    width: 405px;
+    height: 405px;
+}
+
+.devices {
+    background-image: url(images/devices.svg);
+}
+
+.horizon {
+    background-image: url(images/horizon.svg);
+}
+
+.noSvgMask .horizon {
+    background-image: url(images/horizon.png);
+}
+
+.secrecy {
+    background-image: url(images/secrecy.svg);
+}
+
+.noSvgMask .secrecy {
+    background-image: url(images/secrecy.png);
+}
+
+.superman {
+    background-image: url(images/superman.svg);
+}
+
+.noSvgMask .superman {
+    background-image: url(images/superman.png);
+}
+
+.noSvgMask .superman, .noSvgMask .horizon, .noSvgMask .secrecy {
+    background-size: contain;
+}
+
+.transparent {
+    opacity: 0.6;
+}
+
+.button {
+    display: inline-block;
+    border-width: .8rem;
+    border-style: solid;
+    border-radius: .4rem;
+    background-repeat: no-repeat;
+    background-position: 6% center;
+    padding-left: 3.6rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .button:hover {
+        opacity: 0.9;
+    }
+
+.blueButton {
+    background-color: #42b3e2;
+    border-color: #42b3e2;
+    color: white;
+    box-shadow: 0 .2rem #2f81a3;
+    -webkit-box-shadow: 0 .2rem #2f81a3;
+}
+
+.buttonFeedback {
+    margin-top: .5rem;
+    display: inline-block;
+    padding: .8rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+
+.greenButton {
+    background-color: #50ca95;
+    border-color: #50ca95;
+    color: white;
+    box-shadow: 0 .2rem #39916b;
+    -webkit-box-shadow: 0 .2rem #39916b;
+}
+
+.button + .button {
+    margin-left: 1rem;
+}
+
+
+.appstore {
+    background-image: url(images/apple.svg);
+}
+
+.googleplay {
+    background-image: url(images/google.svg);
+}
+
+.windowsstore {
+    background-image: url(images/microsoft.svg);
+}
+
+.vk {
+    background-image: url(images/vk.svg);
+    padding-left: 5rem;
+}
+
+.fb {
+    background-image: url(images/fb.svg);
+    padding-left: 4rem;
+}
+
+.fb-like {
+    margin-top:1rem;
+}
+
+.vkBottomLogo {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
+.vkGroup {
+    position: relative;
+    height: auto;
+    padding-left: 1rem;
+}
+
+.btnText {
+    width: 100%;
+    display: block;
+}
+
+
+#enterSection .content, #horizonSection {
+    position: relative;
+    z-index: 2;
+}
+
+
+#startSection, #enterSection, #actionSection {
+    color: white;
+}
+
+    /*Full page fixes*/
+
+    #startSection > .fp-tableCell {
+        vertical-align: inherit;
+    }
+
+
+#fp-nav {
+    top: 40%;
+    margin-right: 5%;
+}
+
+    #fp-nav ul li a span {
+        width: 1rem;
+        height: 1rem;
+        border: none;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    #fp-nav ul li {
+        margin: .7rem;
+    }
+
+        #fp-nav ul li a.active span {
+            background-color: #50CA95;
+        }
+
+        #fp-nav ul li .fp-tooltip {
+            color: #50CA95;
+            font-weight: bold;
+        }
+
+/*Popup styles*/
+
+
+.popup {
+    display: none;
+    background-color: white;
+    border-radius: .6rem;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    padding: 25px;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+    .popup > div {
+        text-align: left;
+    }
+
+    .popup > h4 {
+        margin: 1rem;
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .popup a {
+        text-decoration: underline;
+        color: #8284c5;
+    }
+
+    .popup > input, .popup > textarea {
+        border-radius: .4rem;
+        display: block;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+        padding-left: .4rem;
+        width: 60%;
+        border: 1px solid black;
+    }
+
+    .popup > input {
+        height: 2rem;
+    }
+
+    .popup > .error {
+        color: red;
+        display: none;
+        margin-bottom: 1rem;
+    }
+
+    .popup > .button {
+        padding: .8rem 1.5rem;
+        cursor: pointer;
+    }
+
+
+
+@media screen and (max-width: 840px) {
+    html {
+        font-size: .75em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .bottomContent {
+        bottom: 70%;
+    }
+
+    footer {
+        top: 30%;
+    }
+
+
+    .button {
+        padding: 1.6rem;
+        background-position: center;
+        background-size: contain;
+    }
+
+        .button .btnText {
+            display: none;
+        }
+
+    .content {
+        width: 90%;
+        padding: 2%;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .bottomContentHeader {
+        margin-top: 1%;
+        margin-bottom: .3rem;
+    }
+
+
+    .noSvgMask .imageStep {
+        width: 274px;
+        height: 274px;
+    }
+
+    .leftBlackTriangle, .rightBlackTriangle {
+        top: 90%;
+    }
+
+    .popup, .popup > input, .popup > textarea {
+        width: 75%;
+    }
+
+     .popup > h4 {
+        margin: 0 0 1rem 0;
+    }
+
+    .smartphone {
+        background-size: contain;
+        width: 60%;
+    }
+
+    #fp-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-aspect-ratio: 2/1) {
+    .topContent {
+        padding-top: 2%;
+    }
+
+    .leftBlackTriangle, .rightBlackTriangle {
+        top: 75%;
+    }
+
+    .imageStep {
+        width: 51%;
+        padding-top: 51%;
+    }
+}
